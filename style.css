@@ -766,7 +766,7 @@ footer .credits p{
         margin-left: 20rem;
     }
     nav ul{
-        /* display: none; */
+        display: none;
         margin-right: 0rem;
         flex-flow: column wrap;
         position: relative;
