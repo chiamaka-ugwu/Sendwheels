@@ -1,0 +1,1022 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+    
+
+/* SEND WHEELS */
+.send-wheels{
+    background: url(./images/hero.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+nav .logo{
+    margin-left: 8rem;
+    margin-top: -1rem;
+}
+nav svg{
+    display: none;
+}
+nav ul{
+    display: flex;
+    margin-right: 9rem;
+}
+nav ul li{
+    margin-left: 2rem;
+    list-style: none;
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+nav ul li a.download{
+    padding: 17px 40px;
+    background: #F48C06;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.3125rem;
+}
+nav ul li a:hover{
+    color: #F48C06;
+}
+nav ul li a.download:hover{
+    color: #fff;
+    background-color: #f48d06a2;
+}
+.content{
+    width: 51%;
+    color: #fff;
+    margin-top: 7rem;
+    margin-left: 10rem;
+}
+.content h1{
+    font-weight: 700;
+    font-size: 3.4rem;
+    line-height: 3.9rem;
+    margin-bottom: 1.5rem;
+}
+.content p{
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+.content .links{
+    height: 6rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+.content .links a{
+    color: #fff;
+    text-decoration: none;
+    padding: 17px 40px;
+    background: #F48C06;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.3125rem;
+}
+.content .links a:hover{
+    background-color: #f48d06a2;
+}
+.content .links .play-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-left: 2rem;
+}    
+.content .links .play-button img{
+    width: 14px;
+    height: 14px;
+}
+.content .links p{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 1.3125rem;
+    opacity: 1;
+}
+
+
+
+
+/* SOLUTIONS */
+.solutions{
+    margin-top: 3rem;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+}
+.solutions .text{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.solutions .text h1{
+    color: #2E526B;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.border{
+    width: 84px;
+    border-bottom: 4px solid #005000;
+}
+.solutions .body{
+    margin-top: 3rem;
+    margin-bottom: 20rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.solutions .body .box{
+    width: 20%;
+    height: 20rem;
+    margin: 1rem;
+    text-align: center;
+    background: #fff;
+    border: 1px solid rgba(220, 226, 238, 0.71);
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.solutions .body .box:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-bottom: 5px solid #005000;
+}
+.solutions .body .box img{
+    margin-top: 2rem;
+}
+.solutions .body .box h2{
+    margin-top: 1.5rem;
+    font-size: 1.6875rem;
+    font-weight: 600;
+    color: #2E526B;
+}
+.solutions .body .box p{
+    width: 80%;
+    margin: auto;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.9rem;
+    color: #2E526B;
+}
+
+
+
+/* DELIVERY */
+.delivery{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+.delivery .text{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.delivery .text h1{
+    color: #2E526B;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.border{
+    width: 84px;
+    border-bottom: 4px solid #005000;
+}
+.delivery .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.delivery .buttons a{
+    text-decoration: none;
+    color: #2E526B;
+    font-size: 1.3125rem;
+    font-weight: 600;
+    border: 1px solid #2E526B;
+    opacity: 0.7;
+    border-radius: 20px;
+    padding: 17px 40px;
+    margin-left: 1rem;
+}
+.delivery .buttons a:hover{
+    background-color: #2e526b18;
+}
+.delivery .images{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.delivery .images .rectangle{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/rectangle.png);
+    position: absolute;
+    margin-top: 12rem;
+}
+.delivery .images .laptop{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.delivery .images .laptop img{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+
+
+/* ALL IN ONE */
+.all-in-one{
+    margin-top: -10rem;
+    position: relative;
+}
+.all-in-one img{
+    width: 100%;
+}
+
+
+
+/* FAQ */
+.faq{
+    margin-top: -15rem;
+    width: 100%;
+    height: auto;
+    background-image: url(./images/background.png);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.faq .f-logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 8rem;
+}
+.faq .text{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.faq .text h1{
+    color: #2E526B;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.border{
+    width: 84px;
+    border-bottom: 4px solid #005000;
+} 
+.faq .body{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+}
+.faq .body .faq-box{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.faq .body .faq-box .icon{
+    width: 5%;
+}
+.faq .body .faq-box .icon #close{
+    display: none;
+}
+.faq .body .faq-box.active #close{
+    display: block;
+    margin-top: 0.5rem;
+}
+.faq .body .faq-box.active #open{
+    display: none;
+}
+.faq .body .faq-box .text{
+    width: 95%;
+    transition: max-height 1.4s ease;
+}
+.faq .body .faq-box .text h3{
+    width: 100%;
+    font-size: 1.25rem;
+    color: #2E526B;
+}
+.faq .body .faq-box .text p{
+    color: #2E526B;
+    font-size: 1.125rem;
+    line-height: 2.95rem;
+    opacity: 0.8;
+    max-height: 0;
+    transition: max-height 1.4s ease;
+    overflow: hidden;
+}
+.faq .body .faq-box.active p{
+    max-height: 5rem;
+    animation: fade 1s ease-in-out;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.faq .body .border-bottom{
+    width: 100%;
+    border-bottom: 1px solid #D7E1F4;
+}
+
+
+
+/* ADVANCED */
+.advanced{
+    width: 100%;
+    height: 100px;
+    position: relative; 
+}
+.advanced img{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.advanced .content{
+    width: 51%;
+    color: #fff;
+    margin-left: 10rem;
+    position: absolute;
+}
+.advanced .content h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+    margin-bottom: 1.5rem;
+}
+.advanced .content .links{
+    height: 6rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+.advanced .content .links a{
+    color: #fff;
+    text-decoration: none;
+    padding: 17px 40px;
+    background: #F48C06;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.3125rem;
+}
+.advanced .content .links a:hover{
+    background-color: #f48d06a2;
+}
+.advanced .content .links .play-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-left: 2rem;
+}    
+.content .links .play-button img{
+    width: 14px;
+    height: 14px;
+}
+.content .links p{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 1.3125rem;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+footer .body{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+footer .body .box{
+    width: 18%;
+    height: auto;
+    margin: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+footer .body .box p{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.85rem;
+    color: #2E526B;
+}
+footer .body .box-links{
+    width: 15%;
+    margin: 1rem;
+    height: auto;
+}
+footer .body .box-links h3{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2E526B;
+    margin-bottom: 0.5rem;
+}
+footer .body .box-links li{
+    list-style: none;
+    font-size: 1rem;
+    line-height: 2.625rem;
+    color: #2E526B;
+}
+footer .body .box-links .list{
+    margin-left: 3rem;
+}
+footer .icons{
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+}
+footer .icons img{
+    margin-right: 0.7rem;
+}
+footer .credits{
+    width: 78%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #2e526b85;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+    color: #2E526B;
+    opacity: 0.5;
+}
+footer .credits p{
+    font-size: 0.9375rem;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERY >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media screen and (max-width: 1366px) {
+    nav{
+        padding-top: 3rem;
+    }
+    nav .logo{
+        margin-left: 6rem;
+        margin-top: -1rem;
+    }
+    nav svg{
+        display: none;
+    }
+    nav ul{
+        margin-right: 7rem;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+    nav ul li a.download{
+        padding: 10px 30px;
+        font-size: 1.05rem;
+    }
+    .content{
+        width: 45%;
+        margin-top: 5rem;
+        margin-left: 8rem;
+    }
+    .content h1{
+        font-size: 2.8rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+    .content p{
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .content .links{
+        height: 4rem;
+    }
+    .content .links a{
+        padding: 10px 30px;
+        font-size: 1.05rem;
+    }
+    .content .links .play-button{
+        width: 30px;
+        height: 30px;
+        margin-left: 1.5rem;
+    }    
+    .content .links .play-button img{
+        width: 13px;
+        height: 13px;
+    }
+    .content .links p{
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        font-size: 1rem;
+    }
+
+
+
+
+    /* SOLUTIONS */
+    .solutions{
+    margin-top: 2rem;
+    }
+    .solutions .text h1{
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .solutions .body{
+        margin-top: 2rem;
+        margin-bottom: 15rem;
+    }
+    .solutions .body .box{
+        width: 18%;
+        height: 18rem;
+    }
+    .solutions .body .box:hover{
+        border-bottom: 3px solid #005000;
+    }
+    .solutions .body .box h2{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+    .solutions .body .box p{
+        width: 90%;
+        margin-top: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.5rem;
+    }
+
+
+
+    /* DELIVERY */
+    .delivery .text h1{
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .delivery .buttons{
+        margin-top: 2rem;
+    }
+    .delivery .buttons a{
+        font-size: 1.1rem;
+        padding: 10px 30px;
+    }
+    .delivery .images .rectangle{
+        margin-top: 7rem;
+    }
+    .delivery .images .laptop{
+        width: 60%;
+    }
+
+
+
+    /* ALL IN ONE */
+    .all-in-one{
+        margin-top: -6rem;
+    }
+    .all-in-one img{
+        width: 100%;
+    }
+
+
+
+
+    /* FAQ */
+    .faq{
+        margin-top: -15rem;
+        height: auto;
+    }
+    .faq .f-logo{
+        width: 100%;
+        padding-top: 9rem;
+    }
+    .faq .f-logo img{
+        width: 3.5%;
+    }
+    .faq .text h1{
+        font-size: 2rem;
+        margin-top: 0.3rem;
+        margin-bottom: 0.5rem;
+    }
+    .faq .body{
+        width: 90%;
+        height: auto;
+    }
+    
+    .faq .body{
+        width: 75%;
+        padding-top: 0;
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+    }
+    .faq .body .faq-box{
+        width: 90%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .faq .body .faq-box .icon{
+        width: 5%;
+    }
+    .faq .body .faq-box .text{
+        width: 95%;
+        transition: max-height 1.4s ease;
+    }
+    .faq .body .faq-box .text h3{
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .faq .body .faq-box .text p{
+        font-size: 0.9rem;
+        line-height: 1.7rem;
+    }
+
+
+
+    /* ADVANCED */
+    .advanced{
+        width: 100%;
+        height: 40%;
+    }
+    .advanced img{
+        width: 100%;   
+        height: 2%;
+    }
+
+
+
+    /* FOOTER */
+    footer{
+        margin-top: 2rem;
+    }
+    footer .body .box p{
+        margin-top: 0;
+        font-size: 0.9rem;
+        line-height: 1.85rem;
+    }
+    footer .body .box-links h3{
+        font-size: 1.1rem;
+    }
+    footer .body .box-links li{
+        font-size: 0.9rem;
+        line-height: 2.1rem;
+    }
+    footer .credits{
+        width: 80%;
+        padding-top: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    footer .credits p{
+        font-size: 0.75rem;
+    }
+
+}
+
+
+
+
+
+/* MEDIA QUERY >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (max-width: 1000px){
+    .send-wheels{
+        background-size: 100% 100%;
+
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+    }
+    nav .logo{
+        margin-left: 1.5rem;
+        margin-top: -1rem;
+    }
+    nav .logo img{
+        width: 100%;
+    }
+    nav svg{
+        display: block;
+        position: absolute;
+        margin-left: 20rem;
+    }
+    nav ul{
+        /* display: none; */
+        margin-right: 0rem;
+        flex-flow: column wrap;
+        position: relative;
+        top: -2rem;
+        width: 90%;
+        height: 100vh;
+        background: white;
+        z-index: 1000;
+
+    }
+    nav ul li{
+        margin-top: 2rem;
+    }
+    nav ul li a{
+        color: #005000;
+    }
+    nav ul li a.download{
+        color: white;
+    }
+    .content{
+        width: 100%;
+        height: auto;
+        color: #fff;
+        margin-top: 2rem;
+        margin-left: 0rem;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: left;
+    }
+    .content h1{
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        text-align: left;
+        width: 85%;
+        margin: auto;
+    }
+    .content p{
+        width: 84%;
+        margin: auto;
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+        text-align: left;
+    }
+    .content .links{
+        width: 70%;
+        display: inline-block;
+        height: auto; 
+        flex-flow: column wrap; 
+    }
+    .content .links a{
+        margin-left: 2rem;
+        margin-bottom: 1rem
+    }
+    .content .links .play-button{
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    .content .links p{
+        margin-top: -1.7rem;
+        margin-left: 4.5rem;
+        font-size: 1rem;
+    }
+
+
+
+
+    /* SOLUTIONS */
+    .solutions{
+        margin-top: 2rem;
+    }
+    
+    .solutions .text h1{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    .solutions .body{
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+        display: flex;
+        flex-flow: column wrap;
+        
+    }
+    .solutions .body .box{
+        width: 80%;
+        height: 17rem;
+    }
+
+
+    /* DELIVERY */
+    .delivery .text h1{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    
+    .delivery .buttons a{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .delivery .images{
+        width: 100%;
+        height: 20vh;
+        position: relative;
+    }
+    .delivery .images .rectangle{
+        margin-top: -3rem;
+    }
+    .delivery .images .laptop{
+        width: 80%;
+    }
+    .delivery .images .laptop img{
+        width: 100%;
+    }
+    
+
+
+
+    /* ALL IN ONE */
+    .all-in-one{
+        margin-top: 10rem;
+        position: relative;
+    }
+    .all-in-one img{
+        width: 100%;
+    }
+
+
+
+
+    /* FAQ */
+    .faq{
+        margin-top: 0rem;
+    }
+    .faq .f-logo{
+        width: 100%;
+        padding-top: 5rem;
+    }
+    .faq .f-logo img{
+        width: 10%;
+    }
+    .faq .text h1{
+        font-size: 2.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    .faq .body{
+        width: 80%;
+        flex-flow: column wrap;
+        margin-top: 4rem;
+        margin-bottom: 10rem;
+    }
+    .faq .body .faq-box{
+        width: 90%;
+    }
+    .faq .body .faq-box .icon{
+        margin-right: 1rem;
+    }
+    .faq .body .faq-box .icon img{
+        width: 13px;
+    }
+    .faq .body .faq-box .text h3{
+        font-size: 1.05rem;
+    }
+    .faq .body .faq-box.text p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+
+
+
+    /* ADVANCED */
+    
+    .advanced .content{
+        width: 75%;
+        margin-left: 0;
+    }
+    .advanced .content h1{
+        font-size: 2rem;
+        line-height: 2.3rem;
+        margin-bottom: 1.5rem;
+        margin-left: 2rem;
+        text-align: left;
+    }
+    .advanced .content .links{
+        height: auto;
+        margin-left: -1rem;
+        margin-top: 1rem;
+    }
+    .advanced .content .links a{
+        padding: 10px 20px;
+        font-size: 1rem;
+        margin-left: -2rem;
+        margin-bottom: 0.5rem;
+    }
+    .advanced .content .links .play-button{
+        margin-top: 0.5rem;
+        margin-left: -8rem;
+    }    
+    .advanced .content .links p{
+        margin-top: -1.7rem;
+        margin-left: 5.5rem;
+        font-size: 1rem;
+    }
+
+
+
+    /* FOOTER */
+    footer .body{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .body .box{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    footer .body .box p{
+        margin-top: 0.5rem;
+    }
+    footer .body .box-links{
+        width: 40%;
+        margin: auto;
+        margin: 1rem;
+        margin-bottom: 1.5rem;
+        height: 10rem;
+    }
+    footer .body .box-links .list{
+        margin-left: 1rem;
+    }
+    footer .credits{
+        width: 100%;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .credits p{
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+
+
+
+}   
+
+
+
+
+
