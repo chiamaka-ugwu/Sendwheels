@@ -10,24 +10,32 @@ p{
 
     
 
-/* SEND WHEELS */
-.send-wheels{
-    background: url(./images/hero.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-    height: 100vh;
-}
+
 nav{
+    height: 4rem;
     display: flex;
+    align-self: flex-start;
     justify-content: space-between;
-    padding-top: 4rem;
+    padding-top: 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #005000;
+    transition: all 0.5s;
 }
 nav .logo{
     margin-left: 8rem;
     margin-top: -1rem;
+
+}
+nav #logo2{
+    display: none;
 }
 nav svg{
+    display: none;
+
+}
+nav .fa-close{
     display: none;
 }
 nav ul{
@@ -59,10 +67,22 @@ nav ul li a.download:hover{
     color: #fff;
     background-color: #f48d06a2;
 }
+
+
+
+
+/* SEND WHEELS */
+.send-wheels{
+    background: url(./images/hero.png);
+    background-repeat: no-repeat;
+    background-size: 101% 100%;
+    width: 100%;
+    height: 90vh;
+}
 .content{
     width: 51%;
     color: #fff;
-    margin-top: 7rem;
+    padding-top: 4rem;
     margin-left: 10rem;
 }
 .content h1{
@@ -225,7 +245,7 @@ nav ul li a.download:hover{
     margin-left: 1rem;
 }
 .delivery .buttons a:hover{
-    background-color: #2e526b18;
+    background-color: #203c5071;
 }
 .delivery .images{
     width: 100%;
@@ -373,8 +393,8 @@ nav ul li a.download:hover{
 /* ADVANCED */
 .advanced{
     width: 100%;
-    height: 100px;
     position: relative; 
+    height: 400px;
 }
 .advanced img{
     width: 100%;
@@ -525,7 +545,8 @@ footer .credits p{
 /* MEDIA QUERY >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media screen and (max-width: 1366px) {
     nav{
-        padding-top: 3rem;
+        height: 3rem;
+        padding-top: 2.5rem;
     }
     nav .logo{
         margin-left: 6rem;
@@ -544,9 +565,16 @@ footer .credits p{
         padding: 10px 30px;
         font-size: 1.05rem;
     }
+
+
+
+
+    /* SEND WHEELS */
+    .send-wheels{
+    height: 86vh;
+    }
     .content{
         width: 45%;
-        margin-top: 5rem;
         margin-left: 8rem;
     }
     .content h1{
@@ -700,13 +728,9 @@ footer .credits p{
 
 
     /* ADVANCED */
-    .advanced{
-        width: 100%;
-        height: 40%;
-    }
-    .advanced img{
-        width: 100%;   
-        height: 2%;
+    .advanced .content .links a{
+        padding: 10px 30px;
+        font-size: 1.05rem;
     }
 
 
@@ -742,59 +766,74 @@ footer .credits p{
 
 
 
+
 /* MEDIA QUERY >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media screen and (max-width: 1000px){
-    .send-wheels{
-        background-size: 100% 100%;
-
-    }
-    nav{
-        display: flex;
-        justify-content: space-between;
-        padding-top: 2rem;
-    }
     nav .logo{
+        width: 100%;
         margin-left: 1.5rem;
         margin-top: -1rem;
     }
     nav .logo img{
-        width: 100%;
+        width: 60%;
     }
-    nav svg{
+    nav #menu-icon{
+        cursor: pointer;
         display: block;
-        position: absolute;
-        margin-left: 20rem;
+        margin-top: -1rem;
+        margin-right: 2rem;
+        position: relative;
+    }
+    nav .fa-close{
+        display: none;
+        cursor: pointer;
+        /* color: white; */
+        color: #005000;
+        z-index: 100;
+        font-size: 30px;
+        margin-right: 2rem;
+        position: relative;
     }
     nav ul{
-        display: none;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
         margin-right: 0rem;
         flex-flow: column wrap;
-        position: relative;
-        top: -2rem;
-        width: 90%;
-        height: 100vh;
+        top: 0;
+        padding-top: 3rem;
+        right: -100%;
+        text-align: center;
         background: white;
-        z-index: 1000;
-
+        transition: right 0.5s;
+        z-index: 10;
     }
     nav ul li{
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     nav ul li a{
         color: #005000;
+        font-size: 1.2rem;
     }
     nav ul li a.download{
         color: white;
+    }
+
+
+
+    /* SEND WHEELS */
+    .send-wheels{
+        height: 90vh;
     }
     .content{
         width: 100%;
         height: auto;
         color: #fff;
-        margin-top: 2rem;
         margin-left: 0rem;
         display: flex;
         flex-flow: column wrap;
         justify-content: left;
+        margin-top: -1rem;
     }
     .content h1{
         font-size: 1.8rem;
@@ -825,9 +864,9 @@ footer .credits p{
         margin-left: 2rem;
     }
     .content .links p{
-        margin-top: -1.7rem;
+        margin-top: -1.5rem;
         margin-left: 4.5rem;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
 
@@ -939,37 +978,39 @@ footer .credits p{
 
 
     /* ADVANCED */
-    
+    .advanced img{
+        height: 70%;
+    }
     .advanced .content{
         width: 75%;
         margin-left: 0;
     }
     .advanced .content h1{
-        font-size: 2rem;
-        line-height: 2.3rem;
-        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
         margin-left: 2rem;
         text-align: left;
+        margin-top: -0.5rem;
     }
     .advanced .content .links{
         height: auto;
         margin-left: -1rem;
-        margin-top: 1rem;
     }
     .advanced .content .links a{
         padding: 10px 20px;
         font-size: 1rem;
         margin-left: -2rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.3rem;
     }
     .advanced .content .links .play-button{
-        margin-top: 0.5rem;
+        margin-top: 0.4rem;
         margin-left: -8rem;
     }    
     .advanced .content .links p{
         margin-top: -1.7rem;
         margin-left: 5.5rem;
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
 
 
