@@ -1,6 +1,7 @@
 const nav = document.getElementById("nav");
 const logo = document.getElementById("logo");
 const logo2= document.getElementById("logo2");
+const links = document.querySelectorAll(".links");
 
 const menuIcon = document.getElementById("menu-icon");
 
@@ -9,14 +10,22 @@ window.onscroll = function(){
     var top = window.scrollY;
     if(top >= 50){
         nav.style.backgroundColor = "white";
+        nav.style.filter = "drop-shadow(0px 3px 3px rgba(83, 83, 83, 0.15))";
         logo.setAttribute("src", "./images/logo2.png");
-        menuIcon.style.fill = "#005000"
+        menuIcon.style.fill = "#005000";
+        for(var i = 0; i < links.length; i++){
+            links[i].style.color = "#005000";
+            links[4].style.color = "white";
+        }
     }
     else{
         nav.style.backgroundColor = "#005000";
-        logo.setAttribute("src", "./images/logo.png")
+        nav.style.filter = "none";
+        logo.setAttribute("src", "./images/logo.png");
         menuIcon.style.fill = "white"
-
+        for(var i = 0; i < links.length; i++){
+            links[i].style.color = "white";
+        }
     }
 }
 

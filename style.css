@@ -456,6 +456,10 @@ nav ul li a.download:hover{
 
 
 
+
+
+
+
 /* FOOTER */
 footer{
     width: 100%;
@@ -533,6 +537,11 @@ footer .credits p{
 
 
 
+
+
+
+
+
 /* MEDIA QUERY >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media screen and (max-width: 1366px) {
     nav{
@@ -556,6 +565,7 @@ footer .credits p{
         padding: 10px 30px;
         font-size: 1.05rem;
     }
+
 
 
 
