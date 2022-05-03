@@ -393,13 +393,15 @@ nav ul li a.download:hover{
 /* ADVANCED */
 .advanced{
     width: 100%;
-    position: relative; 
+    position: relative;
     height: 400px;
+    background-image: url(./images/Group\ 5448\ \(3\).png);
 }
-.advanced img{
-    width: 100%;
-    position: absolute;
-    height: 100%;
+.advanced #group{
+    width: 30%;
+    float: right;
+    margin-top: 3.1rem;
+    margin-right: 6rem;
 }
 
 .advanced .content{
@@ -419,7 +421,6 @@ nav ul li a.download:hover{
     display: flex;
     justify-content: left;
     align-items: center;
-
 }
 .advanced .content .links a{
     color: #fff;
@@ -780,8 +781,8 @@ footer .credits p{
     nav #menu-icon{
         cursor: pointer;
         display: block;
-        margin-top: -1rem;
-        margin-right: 2rem;
+        margin-top: -1.5rem;
+        margin-right: 1.5rem;
         position: relative;
     }
     nav .fa-close{
@@ -979,8 +980,13 @@ footer .credits p{
 
 
     /* ADVANCED */
-    .advanced img{
-        height: 70%;
+    .advanced {
+        height: 300px;
+    }
+    .advanced #group{
+        width: 60%;
+        margin-top: 6.5rem;
+        margin-right: 0;
     }
     .advanced .content{
         width: 75%;
