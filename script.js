@@ -1,7 +1,7 @@
 const nav = document.getElementById("nav");
 const logo = document.getElementById("logo");
 const logo2= document.getElementById("logo2");
-const links = document.querySelectorAll(".links");
+const links = document.querySelectorAll(".link");
 
 const menuIcon = document.getElementById("menu-icon");
 
@@ -38,14 +38,16 @@ const close = document.getElementById("close");
     
 
 menuIcon.addEventListener("click", function(){
-        close.style.display = "block";
-        menuIcon.style.display = "none";
-        dropDown.style.right = "0";
+    close.style.display = "block";
+    menuIcon.style.display = "none";
+    dropDown.style.display = "block";
+    dropDown.style.right = "0";
 })
 
 close.addEventListener("click", function(){
     close.style.display = "none";
     menuIcon.style.display = "block";
+    dropDown.style.display = "none";
     dropDown.style.right = "-100%";
 })
 

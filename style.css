@@ -803,9 +803,10 @@ footer .credits p{
         top: 0;
         padding-top: 3rem;
         right: -100%;
+        display: none;
         text-align: center;
         background: white;
-        transition: right 0.5s;
+        transition: right 1s;
         z-index: 10;
     }
     nav ul li{
