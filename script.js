@@ -28,12 +28,17 @@ if(x.matches){
     window.onscroll = function(){
         var textColor = window.scrollY;
         if(textColor >= 50){
+            nav.style.backgroundColor = "white";
+            nav.style.filter = "drop-shadow(0px 3px 3px rgba(83, 83, 83, 0.15))";
+            logo.setAttribute("src", "./images/logo2.png");
             for(var i = 0; i < links.length; i++){
                 links[i].style.color = "#005000";
-                links[4].style.color = "white";
             }
         }
         else{
+            nav.style.backgroundColor = "#005000";
+            nav.style.filter = "none";
+            logo.setAttribute("src", "./images/logo.png");
             for(var i = 0; i < links.length; i++){
                 links[i].style.color = "white";
             }
